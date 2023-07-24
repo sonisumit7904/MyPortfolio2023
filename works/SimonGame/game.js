@@ -20,10 +20,16 @@ $("body").keypress(function () {
         gamestarted = true;
     }
 });
+$("h1").click(function () {
+    if (!gamestarted) {
+        nextSequence();
+        gamestarted = true;
+    }
+});
 function gameover() {
     gamestarted = false;
     lvl = 0;
-    $("h1").text("Game Over, Press Any Key to Restart");
+    $("h1").text("Game Over, THIS-TEXT to Restart");
     $("body").addClass("game-over");
     setTimeout(function () {
         $("body").removeClass("game-over");
