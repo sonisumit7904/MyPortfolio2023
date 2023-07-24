@@ -20,6 +20,12 @@ $("body").keypress(function () {
         gamestarted = true;
     }
 });
+$("body").click(function () {
+    if (!gamestarted) {
+        nextSequence();
+        gamestarted = true;
+    }
+});
 function gameover() {
     gamestarted = false;
     lvl = 0;
