@@ -20,7 +20,7 @@ $("body").keypress(function () {
         gamestarted = true;
     }
 });
-$("body").click(function () {
+$("h1").click(function () {
     if (!gamestarted) {
         nextSequence();
         gamestarted = true;
