@@ -29,7 +29,7 @@ $("h1").click(function () {
 function gameover() {
     gamestarted = false;
     lvl = 0;
-    $("h1").text("Game Over, THIS-TEXT to Restart");
+    $("h1").text("Game Over, Press This-Text to Restart");
     $("body").addClass("game-over");
     setTimeout(function () {
         $("body").removeClass("game-over");
