@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="icon" href="./public/favicon.ico">
+    <link rel="icon" href="./public/favicon.ico" />
+    <link
+      id="external-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+      media="all"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,51 +23,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      a{
-        text-decoration: none;
-      }
-      .home_logo {
-        margin: 0;
-        padding: 0;
-        border-radius: 50%;
-        background-color: white;
-        border-color: inherit;
-      }
-
-      .gradient-background {
-        background: linear-gradient(300deg, #00bfff, #ff4c68, #0080d6);
-        background-size: 180% 180%;
-        animation: gradient-animation 5s ease infinite;
-      }
-
-      @keyframes gradient-animation {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-      .icon-square {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 0.75rem;
-      }
-
-      .profile-img {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-      }
-      .brand-icon {
-        height: 2rem;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -85,20 +48,16 @@
             <ul class="nav nav-pills">
               <li class="nav-item">
                 <a
-                  href=""
+                  href="./main.html"
                   class="nav-link active gradient-background"
                   aria-current="page"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link text-light">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link text-light">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.linkedin.com/in/sonisumit7904/" class="nav-link text-light"
+                <a
+                  href="https://www.linkedin.com/in/sonisumit7904/"
+                  class="nav-link text-light"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="25"
@@ -113,7 +72,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="mailto:sonisumit7904@gmail.com" class="nav-link text-light"
+                <a
+                  href="mailto:sonisumit7904@gmail.com"
+                  class="nav-link text-light"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="25"
@@ -132,11 +93,23 @@
         </div>
       </header>
 
-      <div class="gradient-background">
+      <div class="gradient-background pb-5">
         <!-- navbar -->
 
         <!-- title -->
         <div class="container col-xxl-8 px-4 mb-0 pb-0 pt-5">
+          <div class="container">
+            <div class="col">
+              <div id="coder-desc" class="description">
+                <h1 class="hello">
+                  <span class="chevron-left">&lt;</span>Hello, I'm Sumit!<span
+                    class="chevron-right"
+                    >&gt;</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
           <div
             class="row flex-lg-row-reverse align-items-center g-5 pb-0 mb-0 pt-5"
           >
@@ -152,14 +125,14 @@
               </div>
             </div>
             <div class="col-sm-8 col-lg-4">
-              <img
-                src="./public/Screenshot 2023-07-22 225859 - Copy - Copy.png"
+              <!-- <img
+                src="./public/HomeHello.jpg"
                 class="d-block mb-0 pb-0 mx-lg-auto img-fluid"
                 alt="dog_iphone_image"
                 height="500"
                 loading="lazy"
                 style="border-radius: 10px"
-              />
+              /> -->
             </div>
             <div class="col-lg-4 col-sm-6">
               <div id="coder-desc" class="description" style="opacity: 1">
@@ -179,14 +152,14 @@
     <!-- Pricing -->
     <section id="pricing">
       <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-          <h4 class="pb-2 border-bottom" style="text-align: center">
+        <div class="container pricing">
+          <h5 class="pb-2 border-bottom mb-4" style="text-align: center">
             SOME OF MY LATEST WORK
-          </h4>
+          </h5>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <a href="./works/DrumKit/drumkit.html">
-                <div class="card shadow-sm">
+                <div class="card">
                   <img src="./public/images/drumfront.png" alt="keeperFront" />
                   <div class="card-body">
                     <p class="card-text">Drum Kit, a drummer game</p>
@@ -202,7 +175,7 @@
             </div>
             <div class="col">
               <a href="./works/SimonGame/simon.html">
-                <div class="card shadow-sm">
+                <div class="card">
                   <img src="./public/images/simonFront.png" alt="keeperFront" />
                   <div class="card-body">
                     <p class="card-text">Simon Game, easy but difficult</p>
@@ -218,7 +191,7 @@
             </div>
             <div class="col">
               <a href="./works/Tindogg/tindogg.html">
-                <div class="card shadow-sm">
+                <div class="card">
                   <img
                     src="./public/images/tindoggFront.png"
                     alt="keeperFront"
@@ -236,8 +209,8 @@
               </a>
             </div>
             <div class="col">
-              <a href="http://localhost:4000/">
-                <div class="card shadow-sm">
+              <a href="https://todolistwithdb.onrender.com">
+                <div class="card">
                   <img
                     src="./public/images/todolistFront.png"
                     alt="keeperFront"
@@ -259,8 +232,8 @@
               </a>
             </div>
             <div class="col">
-              <a href="http://localhost:5000/">
-                <div class="card shadow-sm">
+              <a href="https://blogify-ijh9.onrender.com">
+                <div class="card">
                   <img src="./public/images/Blogdb.png" alt="keeperFront" />
                   <div class="card-body">
                     <p class="card-text">Blog Website</p>
@@ -277,8 +250,8 @@
               </a>
             </div>
             <div class="col">
-              <a href="http://localhost:3000/">
-                <div class="card shadow-sm">
+              <a href="https://sonisumit7904.github.io/KeeperReactJs/">
+                <div class="card">
                   <img
                     src="./public/images/keeperfront.png"
                     alt="keeperFront"
@@ -305,23 +278,9 @@
       <div class="gradient-background my-0">
         <div class="container">
           <footer
-            class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top"
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
           >
-            <p class="col-md-4 mb-0 text-body-secondary">© 2023 Sumit Soni</p>  
-
-            <ul class="nav col-md-4 justify-content-end">
-              <li class="nav-item">
-                <a href="" class="nav-link px-2 text-body-secondary">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link px-2 text-body-secondary"
-                  >Contact</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link px-2 text-body-secondary">About</a>
-              </li>
-            </ul>
+            <p class="mb-0 text-light">© 2023 Sumit Soni</p>
           </footer>
         </div>
       </div>
