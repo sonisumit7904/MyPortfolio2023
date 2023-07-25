@@ -41,10 +41,10 @@
                 class="home_logo"
                 src="./public/safari-pinned-tab.svg"
                 alt="logo"
-                height="60"
+                height="50rem"
               />
             </a>
-
+            <ul></ul>
             <ul class="nav nav-pills">
               <li class="nav-item">
                 <a
@@ -106,6 +106,31 @@
                     class="chevron-right"
                     >&gt;</span
                   >
+
+                  <button class="changeText btn btn-sm btn-light">
+                    <body class="">
+                      <div class="container">
+                        <span class="text first-text">I'm a</span>
+                        <span class="text sec-text">Coder</span>
+                      </div>
+
+                      <script>
+                        const text = document.querySelector(".sec-text");
+
+                        const textLoad = () => {
+                          setTimeout(() => {
+                            text.textContent = "Coder!";
+                          }, 0);
+                          setTimeout(() => {
+                            text.textContent = "Webdeveloper!";
+                          }, 2000); //1s = 1000 milliseconds
+                        };
+
+                        textLoad();
+                        setInterval(textLoad, 4000);
+                      </script>
+                    </body>
+                  </button>
                 </h1>
               </div>
             </div>
@@ -157,117 +182,196 @@
             SOME OF MY LATEST WORK
           </h5>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <a href="./works/DrumKit/drumkit.html">
-                <div class="card">
-                  <img src="./public/images/drumfront.png" alt="keeperFront" />
-                  <div class="card-body">
-                    <p class="card-text">Drum Kit, a drummer game</p>
+            <div class="col zoom">
+              <div class="card">
+                <img src="./public/images/drumfront.png" alt="keeperFront" />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="h5">Drum Kit</span>, a drumming game
+                  </p>
 
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                    </ul>
+                  <button type="button" class="btn btn-warning btn-sm">
+                    HTML
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm">
+                    CSS
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm">
+                    Javascript
+                  </button>
+
+                  <div class="container mt-4">
+                    <a href="./works/DrumKit/drumkit.html">
+                      <button type="button" class="btn btn-primary">
+                        Try it!
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
-            <div class="col">
-              <a href="./works/SimonGame/simon.html">
-                <div class="card">
-                  <img src="./public/images/simonFront.png" alt="keeperFront" />
-                  <div class="card-body">
-                    <p class="card-text">Simon Game, easy but difficult</p>
+            <div class="col zoom">
+              <div class="card">
+                <img src="./public/images/simonFront.png" alt="keeperFront" />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="h5">Simon Game</span>, a Memory Sequence Game
+                  </p>
 
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                    </ul>
+                  <button type="button" class="btn btn-warning btn-sm">
+                    HTML
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm">
+                    CSS
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm">
+                    Javascript
+                  </button>
+
+                  <br />
+                  <div class="container mt-4">
+                    <a href="./works/SimonGame/simon.html">
+                      <button type="button" class="btn btn-primary">
+                        Try it!
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
-            <div class="col">
-              <a href="./works/Doggr/doggr.html">
-                <div class="card">
-                  <img
-                    src="./public/images/tindoggFront.png"
-                    alt="keeperFront"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">Doggr, tinder for dogs</p>
+            <div class="col zoom">
+              <div class="card">
+                <img src="./public/images/doggrFront.PNG" alt="keeperFront" />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="h5">Doggr</span>, tinder for dogs, made using
+                    Bootstrap
+                  </p>
 
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Bootstrap</li>
-                    </ul>
+                  <button type="button" class="btn btn-warning btn-sm">
+                    HTML
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm">
+                    CSS
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm">
+                    Javascript
+                  </button>
+                  <button type="button" class="btn btn-info btn-sm">
+                    Bootstrap
+                  </button>
+
+                  <div class="container mt-4">
+                    <a href="./works/Doggr/doggr.html">
+                      <button type="button" class="btn btn-primary">
+                        Try it!
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
-            <div class="col">
-              <a href="https://todolistwithdb.onrender.com">
-                <div class="card">
-                  <img
-                    src="./public/images/todolistFront.png"
-                    alt="keeperFront"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Basic Todolist, first venture using node
-                    </p>
+            <div class="col zoom">
+              <div class="card">
+                <img
+                  src="./public/images/todolistFront.png"
+                  alt="keeperFront"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="h5">Todolist</span>, first venture using node
+                  </p>
 
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                      <li>NodeJs</li>
-                      <li>MongoDB</li>
-                    </ul>
+                  <button type="button" class="btn btn-danger btn-sm">
+                    HTML
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm">
+                    CSS
+                  </button>
+                  <button type="button" class="btn btn-warning btn-sm">
+                    Javascript
+                  </button>
+                  <button type="button" class="btn btn-info btn-sm">
+                    NodeJs
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm">
+                    MongoDB
+                  </button>
+
+                  <div class="container mt-4">
+                    <a href="https://todolistwithdb.onrender.com">
+                      <button type="button" class="btn btn-primary">
+                        Try it!
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
-            <div class="col">
-              <a href="https://blogify-ijh9.onrender.com">
-                <div class="card">
-                  <img src="./public/images/Blogdb.png" alt="keeperFront" />
-                  <div class="card-body">
-                    <p class="card-text">Blog Website</p>
+            <div class="col zoom">
+              <div class="card">
+                <img src="./public/images/Blogdb.png" alt="keeperFront" />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="h5">Blogify</span>, Blog Website for Bloggers
+                  </p>
 
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                      <li>NodeJs</li>
-                      <li>MongoDB</li>
-                    </ul>
+                  <button type="button" class="btn btn-danger btn-sm">
+                    HTML
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm">
+                    CSS
+                  </button>
+                  <button type="button" class="btn btn-warning btn-sm">
+                    Javascript
+                  </button>
+                  <button type="button" class="btn btn-info btn-sm">
+                    NodeJs
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm">
+                    MongoDB
+                  </button>
+
+                  <div class="container mt-4">
+                    <a href="https://blogify-ijh9.onrender.com">
+                      <button type="button" class="btn btn-primary">
+                        Try it!
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
-            <div class="col">
-              <a href="https://sonisumit7904.github.io/KeeperReactJs/">
-                <div class="card">
-                  <img
-                    src="./public/images/keeperFront.png"
-                    alt="keeperFront"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">Keeper App, Google Keep Clone</p>
+            <div class="col zoom">
+              <div class="card">
+                <img src="./public/images/keeperFront.png" alt="keeperFront" />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="h5">Keeper</span>, Google Keep Clone
+                  </p>
 
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                      <li>ReactJs</li>
-                    </ul>
+                  <button type="button" class="btn btn-danger btn-sm">
+                    HTML
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm">
+                    CSS
+                  </button>
+                  <button type="button" class="btn btn-warning btn-sm">
+                    Javascript
+                  </button>
+                  <button type="button" class="btn btn-info btn-sm">
+                    ReactJs
+                  </button>
+
+                  <div class="container mt-4">
+                    <a href="https://sonisumit7904.github.io/KeeperReactJs/">
+                      <button type="button" class="btn btn-primary">
+                        Try it!
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -280,7 +384,7 @@
           <footer
             class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
           >
-            <p class="mb-0 text-light">© 2023 Sumit Soni</p>
+            <p class="mb-0 text-light">2023 Sumit Soni</p>
           </footer>
         </div>
       </div>
