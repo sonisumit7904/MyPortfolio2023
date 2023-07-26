@@ -19,7 +19,7 @@ h1 {
 p {
   font-family: "Montserrat", Roboto, "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
-  color: 071952;
+  color: #071952;
 }
 h5 {
   font-family: "Montserrat", Roboto, "Segoe UI", Tahoma, Geneva, Verdana,
@@ -209,7 +209,6 @@ button.visited {
   background-color: white;
 }
 .changeText body {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,13 +217,13 @@ button.visited {
 }
 .changeText .container {
   text-align: left;
-  width: 500px;
+  width: 400px;
   overflow: hidden;
 }
 .changeText .container .text {
   position: relative;
   color: #5c92f7;
-  left: 20%;
+  left: 10%;
   font-size: 30px;
   font-weight: 600;
 }
@@ -240,12 +239,14 @@ button.visited {
   width: 100%;
   background-color: white;
   border-left: 2px solid #008bdb;
-  animation: animate 2s steps(12) infinite;
+  animation: animate 2s steps(12) infinite; 
+  
 }
 @keyframes animate {
   40%,
   60% {
-    left: calc(100% + 4px);
+    left: calc(100% + 1px);
+    width: 0%;
   }
   100% {
     left: 0%;
