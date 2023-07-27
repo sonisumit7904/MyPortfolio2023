@@ -67,6 +67,7 @@ h5 {
   height: 2rem;
 }
 .card {
+  min-height: 45ch;
   background-color: #dff2ff;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
