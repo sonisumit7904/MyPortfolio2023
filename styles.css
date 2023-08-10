@@ -34,6 +34,9 @@ h5 {
   background-color: white;
   border-color: inherit;
 }
+.home_logo:hover{
+  background-color: rgb(221, 221, 221);
+}
 
 .gradient-background {
   background: linear-gradient(300deg, #00bfff, #aedfff, #0080d6);
@@ -255,11 +258,20 @@ button.visited {
 }
 /* To apply zoom effect */
 .zoom {
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.3s; /* Animation */
 }
 
 .zoom:hover {
   transform: scale(
     1.04
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom .home_logo {
+  transition: transform 0.4s; /* Animation */
+}
+
+.zoom .home_logo:hover {
+  transform: scale(
+    1.1
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
