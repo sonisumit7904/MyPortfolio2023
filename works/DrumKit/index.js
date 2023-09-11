@@ -57,6 +57,7 @@ for (var i = 0; i < numOfDrumButtons; i++) {
 // Keyboard Pressed!
 document.addEventListener("keypress", function (event) {
     var buttonpressed = event.key;
+    buttonpressed.toLowerCase();
     console.log(event.key+" is Pressed!");
     var classname="."+event.key;
     makeSound(buttonpressed);
