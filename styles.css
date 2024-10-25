@@ -27,7 +27,12 @@ h5 {
   font-weight: 700;
   color: #414350;
 }
-.home_logo {
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_logo{
   margin: 0;
   padding: 0;
   border-radius: 50%;
